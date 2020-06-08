@@ -1,0 +1,9 @@
+#/bin/bash
+#: Title		: hello
+#: Date			: 2020-06-08
+#: Author		: "Nick Baynham" <nickbaynham@gmail.com>
+#: Version		: 1.0
+#: Description		: print Hello, <userName>!
+#: Options		: None
+
+printf "Hello, %s\n" "$1!"

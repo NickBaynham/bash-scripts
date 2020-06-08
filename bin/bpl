@@ -1,0 +1,15 @@
+#/bin/bash
+#: Title		: bpl-script
+#: Date			: 2020-06-08
+#: Author		: "Nick Baynham" <nickbaynham@gmail.com>
+#: Version		: 1.0
+#: Description		: creates a directory $HOME/bpl and subdirectories bin and scripts
+#: Options		: None
+
+printf "%s\n" "Creating $HOME/bpl"
+mkdir $HOME/bpl
+printf "%s\n" "Creating $HOME/bpl/scripts"
+mkdir $HOME/bpl/scripts
+printf "%s\n" "Creating $HOME/bp/bin"
+mkdir $HOME/bpl/bin
+
