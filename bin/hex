@@ -1,0 +1,10 @@
+#/bin/bash
+#: Title		: hex
+#: Date			: 2020-06-08
+#: Author		: "Nick Baynham" <nickbaynham@gmail.com>
+#: Version		: 1.0
+#: Description		: print the value of a color as hex from three decimals
+#: Options		: None
+
+printf "color: #%02x%02x%02x;\n" $1 $2 $3
+
