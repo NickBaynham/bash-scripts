@@ -1,0 +1,17 @@
+#/bin/bash
+#: Title		: hello
+#: Date			: 2020-06-08
+#: Author		: "Nick Baynham" <nickbaynham@gmail.com>
+#: Version		: 1.0
+#: Description		: asks for a name, then prints Hello, <name>!
+#: Options		: None
+
+read name
+if [[ -z $name ]]
+then
+  echo "No name was entered." >&2
+  exit 1 ## Set a failed return code
+else
+  printf "Hello %s \n" "$name"
+fi
+

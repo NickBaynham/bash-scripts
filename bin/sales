@@ -20,6 +20,6 @@ printf "%$totalwidth.${totalwidth}s\n" "$divider"
 
 ## Print lines of report
 printf "$format" \
-   PfeiGuard 79.95 4 319.8 \
+   PfeiGuard   79.95 4 319.8 \
    PfeiFilter  209.99 1 209.99 \
-   PfeiCredit 315.49 2 630.98
+   PfeiCredit  315.49 2 630.98

@@ -1,10 +1,13 @@
 #/bin/bash
-#: Title		: hw
+#: Title		: posint
 #: Date			: 2020-06-08
 #: Author		: "Nick Baynham" <nickbaynham@gmail.com>
 #: Version		: 1.0
-#: Description		: print Hello, World!
+#: Description		: check if valid positive integer
 #: Options		: None
 
-printf "%s\n" "Hello, World!"
-exit 0
+case $1 in
+  *[!0-9]*) false;;
+  *) true ;;
+esac
+

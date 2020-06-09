@@ -1,0 +1,13 @@
+#/bin/bash
+#: Title		: contains
+#: Date			: 2020-06-08
+#: Author		: "Nick Baynham" <nickbaynham@gmail.com>
+#: Version		: 1.0
+#: Description		: check if first argument contains second argument
+#: Options		: None
+
+case $1 in
+  *"$2"*) true ;;
+  *) false ;;
+esac
+

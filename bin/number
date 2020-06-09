@@ -1,0 +1,19 @@
+#/bin/bash
+#: Title		: number
+#: Date			: 2020-06-09
+#: Author		: "Nick Baynham" <nickbaynham@gmail.com>
+#: Version		: 1.0
+#: Description		: asks for a number not greater than 10, then prints too big if over, or the number if valid
+#: Options		: None
+
+printf "Enter a number not greater than 10: "
+read number
+if (( number > 10 ))
+then
+  printf "%d is too big\n" "$number" >&2
+  exit 1
+else
+  printf "You entered %d \n" "$number"
+fi
+
+

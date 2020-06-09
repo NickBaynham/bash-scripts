@@ -1,0 +1,23 @@
+#/bin/bash
+#: Title		: range
+#: Date			: 2020-06-09
+#: Author		: "Nick Baynham" <nickbaynham@gmail.com>
+#: Version		: 1.0
+#: Description		: asks for a number, verify number is in range 10 and 20 inclusive
+#: Options		: None
+
+printf "Enter a number between 10 and 20 inclusive: "
+read number
+if (( number < 10 ))
+then
+  printf "%d is too low\n" "$number" >&2
+  exit 1
+elif (( number > 20 ))
+then
+  printf "%d is too high\n" "$number" >&2
+  exit 1
+else
+  printf "You entered %d \n" "$number"
+fi
+
+
