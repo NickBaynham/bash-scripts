@@ -1,0 +1,13 @@
+#/bin/bash
+#: Title		: countries
+#: Date			: 2020-06-09
+#: Author		: "Nick Baynham" <nickbaynham@gmail.com>
+#: Version		: 1.0
+#: Description		: print a list of countries using a for loop
+#: Options		: None
+
+for var in Canada USA Mexico
+do
+  printf "%s\n" "$var"
+done
+

@@ -6,6 +6,13 @@
 #: Description		: check if first argument contains second argument
 #: Options		: None
 
+case $# in
+  2) ;; ## We need two argments, so continue...
+  *) printf "%s\n" "Usage: contains <arg1> <arg2>"
+     exit 1
+     ;;
+esac
+
 case $1 in
   *"$2"*) true ;;
   *) false ;;

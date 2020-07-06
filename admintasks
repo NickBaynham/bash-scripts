@@ -1,0 +1,21 @@
+#~/bin/bash
+
+# Author: Nick Baynham
+# Description: Run Admin Tasks
+# Created On: Monday, June 29, 2020
+
+echo
+echo Admin Tasks
+echo
+top | head -10
+echo
+df -h
+echo
+uptime
+echo
+free -m
+echo
+iostat
+echo
+echo End of Script
+

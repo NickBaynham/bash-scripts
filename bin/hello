@@ -6,4 +6,11 @@
 #: Description		: print Hello, <userName>!
 #: Options		: None
 
+case $# in
+  1) ;; ## We want an argument, so continue
+  *) printf "Usage: hello <name>"
+     exit 1
+     ;;
+esac
+
 printf "Hello, %s\n" "$1!"

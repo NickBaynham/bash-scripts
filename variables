@@ -1,0 +1,19 @@
+#!/bin/bash
+# Author: Nick Baynham
+# Description: Creating Variables
+# Created On: Monday, June 29, 2020
+
+# Define Variables
+p=pwd
+l=ls
+wi=whoami
+d=date
+c='cal 2018'
+
+echo Run Variable Tasks
+$p
+$l
+$wi
+$d
+$c
+

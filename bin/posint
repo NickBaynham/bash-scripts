@@ -6,6 +6,13 @@
 #: Description		: check if valid positive integer
 #: Options		: None
 
+case $# in
+  1) ;; ## We want one argument, so continue...
+  *) printf "Usage: posint <variable>" >&2
+     exit 1
+     ;;
+esac
+
 case $1 in
   *[!0-9]*) false;;
   *) true ;;
